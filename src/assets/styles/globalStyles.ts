@@ -13,4 +13,8 @@ export default createGlobalStyle`
   p + p {
     ${tw`mt-3`};
   }
+  
+  ul {
+    
+  }
 `;

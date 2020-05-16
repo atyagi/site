@@ -1,5 +1,5 @@
 ---
 category: 'contact section'
-title: 'Contacts'
+title: 'Contact'
 subtitle: 'For more info contact me'
 ---

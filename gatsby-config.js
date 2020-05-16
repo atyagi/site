@@ -1,8 +1,10 @@
+const siteAddress = new URL("https://ankittyagi.com");
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby.JS`,
-    description: `Gatsby Markdown Personal Website Starter, using Typescript, Styled Components, Tailwindcss and Framer Motion.`,
-    author: `Saimir Kapaj`
+    title: `Ankit Tyagi`,
+    description: `Personal Site and Blog for Ankit Tyagi.`,
+    author: `Ankit Tyagi`
   },
   plugins: [
     `gatsby-plugin-typescript`,
@@ -58,6 +60,20 @@ module.exports = {
       options: {
         tailwind: true,
         purgeOnly: [`src/assets/styles/global.css`]
+      }
+    },
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: "atyagi-site",
+        protocol: siteAddress.protocol.slice(0, -1),
+        hostname: siteAddress.hostname,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: siteAddress.href.slice(0, -1),
       }
     }
   ]

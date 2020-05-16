@@ -1,9 +1,20 @@
 ---
 category: 'education'
-university: 'Columbia University'
-degree: 'Bachelor'
-startDate: 'Oct 2005'
-endDate: 'Jul 2008'
+university: 'University of Southern California'
+degree: 'Bachelors of Science | Computer Science/Business Administration'
+startDate: 'Aug 2009'
+endDate: 'May 2013'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Duel Degree program that focused on both technology and business in an applied learning environment. 
+Coursework involved subjects such as:
+
+- Business:
+  - Finance
+  - Accounting
+  - Marketing
+  - Organizational Behavior
+- Computer Science:
+  - Algorithms
+  - Databases
+

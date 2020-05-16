@@ -1,6 +1,7 @@
 ---
 category: 'contact'
-title: 'Phone'
-icon: 'phone'
-content: '+122 334 888 323'
+title: 'Email'
+icon: 'paper-plane'
+content: 'ankit.tyagi.2@gmail.com'
+link: 'mailto:ankit.tyagi.2@gmail.com'
 ---

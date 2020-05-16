@@ -1,14 +1,14 @@
-import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
 
-import InfoBlock from 'components/ui/InfoBlock';
-import Container from 'components/ui/Container';
-import TitleSection from 'components/ui/TitleSection';
-import { IconProps } from 'components/ui/Icon';
+import InfoBlock from "components/ui/InfoBlock";
+import Container from "components/ui/Container";
+import TitleSection from "components/ui/TitleSection";
+import { IconProps } from "components/ui/Icon";
 
-import { SectionTitle } from 'helpers/definitions';
+import { SectionTitle } from "helpers/definitions";
 
-import * as Styled from './styles';
+import * as Styled from "./styles";
 
 interface Contact {
   node: {
@@ -17,6 +17,7 @@ interface Contact {
       title: string;
       content: string;
       icon: IconProps;
+      link: string;
     };
   };
 }
@@ -38,6 +39,7 @@ const ConctactInfo: React.FC = () => {
               title
               icon
               content
+              link
             }
           }
         }
@@ -49,21 +51,23 @@ const ConctactInfo: React.FC = () => {
   const contacts: Contact[] = allMarkdownRemark.edges;
 
   return (
-    <Container section>
-      <TitleSection title={sectionTitle.title} subtitle={sectionTitle.subtitle} center />
-      {contacts.map((item) => {
-        const {
-          id,
-          frontmatter: { title, icon, content }
-        } = item.node;
+    <Styled.Contact>
+      <Container section>
+        <TitleSection title={sectionTitle.title} subtitle={sectionTitle.subtitle} center/>
+        {contacts.map((item) => {
+          const {
+            id,
+            frontmatter: { title, icon, content, link }
+          } = item.node;
 
-        return (
-          <Styled.ContactInfoItem key={id}>
-            <InfoBlock icon={icon} title={title} content={content} center />
-          </Styled.ContactInfoItem>
-        );
-      })}
-    </Container>
+          return (
+            <Styled.ContactInfoItem key={id}>
+              <InfoBlock icon={icon} title={title} content={content} center link={link}/>
+            </Styled.ContactInfoItem>
+          );
+        })}
+      </Container>
+    </Styled.Contact>
   );
 };
 

@@ -9,6 +9,7 @@ import Newsletter from 'components/Newsletter';
 import 'assets/styles/global.css';
 import GlobalStyles from 'assets/styles/globalStyles';
 import * as Styled from './styles';
+import ContactInfo from "../ContactInfo";
 
 interface Props {
   children: React.ReactNode;
@@ -38,7 +39,7 @@ const Layout: React.FC<Props> = ({ children }) => {
             transition={{ delay: 0.2 }}
           >
             {children}
-            <Newsletter />
+            <ContactInfo />
             <Footer />
           </motion.div>
         </Styled.Layout>

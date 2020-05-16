@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab, faGithub, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import {
   faLaptopCode,
   faDrawPolygon,
@@ -10,13 +10,14 @@ import {
   faMapMarkerAlt,
   faPhone,
   faPaperPlane
-} from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon, FontAwesomeIconProps } from '@fortawesome/react-fontawesome';
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon, FontAwesomeIconProps } from "@fortawesome/react-fontawesome";
 
 /* add any additional icon to the library */
-library.add(fab, faLaptopCode, faDrawPolygon, faEdit, faEdit, faBullhorn, faMapMarkerAlt, faPhone, faPaperPlane);
+library.add(fab, faLaptopCode, faDrawPolygon, faEdit, faEdit, faBullhorn, faMapMarkerAlt, faPhone, faPaperPlane,
+  faGithub, faLinkedin, faTwitter);
 
-export type IconProps = FontAwesomeIconProps['icon'];
+export type IconProps = FontAwesomeIconProps["icon"];
 
 const Icon: React.FC<FontAwesomeIconProps> = ({ ...props }) => <FontAwesomeIcon {...props} />;
 
