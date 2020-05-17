@@ -1,5 +1,5 @@
 require('dotenv').config();
-const siteAddress = new URL("https://ankittyagi.com");
+const siteAddress = new URL('https://ankittyagi.com');
 
 module.exports = {
   siteMetadata: {
@@ -66,15 +66,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-s3`,
       options: {
-        bucketName: "ankittyagi.com",
+        bucketName: 'ankittyagi.com',
         protocol: siteAddress.protocol.slice(0, -1),
-        hostname: siteAddress.hostname,
-      },
+        hostname: siteAddress.hostname
+      }
     },
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: siteAddress.href.slice(0, -1),
+        siteUrl: siteAddress.href.slice(0, -1)
       }
     }
   ]

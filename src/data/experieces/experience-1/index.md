@@ -5,4 +5,3 @@ position: 'Software Engineer'
 startDate: 'Jan 2012'
 endDate: 'July 2015'
 ---
-

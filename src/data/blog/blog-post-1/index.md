@@ -12,5 +12,4 @@ Hello! This is the start of what I hope is a way to help give back to the broade
 of the different things I've picked up on and learned over the years.
 
 I've been writing software for about 10 years at the time of writing this, which feels both like an eternity and
-like no time has passed. 
-
+like no time has passed.

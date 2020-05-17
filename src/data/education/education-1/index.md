@@ -6,7 +6,7 @@ startDate: 'Aug 2009'
 endDate: 'May 2013'
 ---
 
-Duel Degree program that focused on both technology and business in an applied learning environment. 
+Duel Degree program that focused on both technology and business in an applied learning environment.
 Coursework involved subjects such as:
 
 - Business:
@@ -17,4 +17,3 @@ Coursework involved subjects such as:
 - Computer Science:
   - Algorithms
   - Databases
-

@@ -1,13 +1,17 @@
 language: node_js
 node_js:
   - 12.16.3
+
 branches:
   only:
     - master
+
 install:
   - npm ci
+
 script:
   - npm run build
+
 deploy:
   provider: s3
   bucket: ${AWS_BUCKET}

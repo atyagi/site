@@ -8,12 +8,12 @@ This is a personal website / blog, available at [https://ankittyagi.com](https:/
 
 ### Application
 
-- [Gatsby](https://www.gatsbyjs.org/) 
+- [Gatsby](https://www.gatsbyjs.org/)
 - [Markdown](https://www.markdownguide.org/)
 - [Typescript](https://www.typescriptlang.org/)
 - [Styled Components](https://styled-components.com/)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [Framer Motion](https://www.framer.com/motion/) 
+- [Framer Motion](https://www.framer.com/motion/)
 - [React Font Awesome](https://github.com/FortAwesome/react-fontawesome/)
 
 ### Deployment
