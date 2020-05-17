@@ -8,6 +8,6 @@ content: >-
     of what we can do forward.
     Some of my latest interests have been in Machine Learning, Data Analysis,
     Cloud Computing, and Infrastructure as Code.
-linkTo: '/resume/'
+linkTo: '/'
 linkText: 'View My Profile'
 ---

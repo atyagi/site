@@ -1,3 +1,4 @@
+require('dotenv').config();
 const siteAddress = new URL("https://ankittyagi.com");
 
 module.exports = {
@@ -65,7 +66,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-s3`,
       options: {
-        bucketName: "atyagi-site",
+        bucketName: "ankittyagi.com",
         protocol: siteAddress.protocol.slice(0, -1),
         hostname: siteAddress.hostname,
       },
