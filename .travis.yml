@@ -13,8 +13,9 @@ deploy:
   bucket: ${AWS_BUCKET}
   access_key_id: ${AWS_ACCESS_KEY_ID}
   secret_access_key: ${AWS_SECRET_ACCESS_KEY}
-  skip_cleanup: true
+  cleanup: true
   local_dir: public
+  acl: public_read
 
 after_deploy:
   - ./node_modules/.bin/aws-cloudfront-invalidate ${CLOUDFRONT_DISTRIBUTION}
