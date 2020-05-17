@@ -13,7 +13,7 @@ deploy:
   bucket: ${AWS_BUCKET}
   access_key_id: ${AWS_ACCESS_KEY_ID}
   secret_access_key: ${AWS_SECRET_ACCESS_KEY}
-  cleanup: true
+  skip_cleanup: true
   local_dir: public
   acl: public_read
 
