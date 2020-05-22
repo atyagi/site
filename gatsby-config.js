@@ -43,13 +43,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-personal-website-starter`,
-        short_name: `starter`,
+        name: `Ankit Tyagi Personal Site`,
+        short_name: `Ankit Tyagi`,
         start_url: `/`,
         background_color: `#81e6d9`,
         theme_color: `#81e6d9`,
         display: `minimal-ui`,
-        icon: `src/assets/images/gatsby-icon.png`
+        icon: `src/assets/images/gatsby-icon.png`,
+        include_favicon: false
       }
     },
     `gatsby-plugin-offline`,

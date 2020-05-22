@@ -77,7 +77,9 @@ const SEO: React.FC<Props> = ({ description, lang, meta, title }) => {
           content: metaDescription
         }
       ].concat(meta!)}
-    />
+    >
+      <script async src="https://cdn.youracclaim.com/assets/utilities/embed.js" />
+    </Helmet>
   );
 };
 
