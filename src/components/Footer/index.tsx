@@ -1,39 +1,28 @@
-import React from "react";
+import React from 'react';
 import Icon from 'components/ui/Icon';
-import { faGithub, faTwitter, faLinkedin} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
-import Container from "components/ui/Container";
+import Container from 'components/ui/Container';
 
-import * as Styled from "./styles";
+import * as Styled from './styles';
 
 const Footer: React.FC = () => (
   <Styled.Footer>
     <Container>
       <Styled.Links>
         <Icon icon={faGithub} />
-        <Styled.Link
-          href="https://github.com/atyagi"
-          rel="noreferrer noopener"
-          target="_blank"
-        >
+        <OutboundLink href="https://github.com/atyagi" rel="noreferrer noopener" target="_blank">
           Github
-        </Styled.Link>
+        </OutboundLink>
         <Icon icon={faTwitter} />
-        <Styled.Link
-          href="https://twitter.com/ankittya/"
-          rel="noreferrer noopener"
-          target="_blank"
-        >
+        <OutboundLink href="https://twitter.com/ankittya/" rel="noreferrer noopener" target="_blank">
           Twitter
-        </Styled.Link>
+        </OutboundLink>
         <Icon icon={faLinkedin} />
-        <Styled.Link
-          href="https://www.linkedin.com/in/antyagi/"
-          rel="noreferrer noopener"
-          target="_blank"
-        >
+        <OutboundLink href="https://www.linkedin.com/in/antyagi/" rel="noreferrer noopener" target="_blank">
           LinkedIn
-        </Styled.Link>
+        </OutboundLink>
       </Styled.Links>
     </Container>
   </Styled.Footer>
