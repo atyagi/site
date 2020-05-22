@@ -19,8 +19,6 @@ module.exports = {
         exclude: [],
         pageTransitionDelay: 0,
         defer: false,
-        sampleRate: 5,
-        siteSpeedSampleRate: 10,
         cookieDomain: siteAddress.hostname
       }
     },
