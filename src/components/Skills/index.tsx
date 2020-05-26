@@ -55,9 +55,11 @@ const Skills: React.FC = () => {
             frontmatter: { title, percentage }
           } = item.node;
 
+          let ability = percentage >= 66 ? 'Expert' : percentage < 33 ? 'Beginner' : 'Advanced';
+
           return (
             <Styled.Skill key={id}>
-              <ProgressBar title={title} percentage={percentage} />
+              <ProgressBar title={title} percentage={percentage} ability={ability} />
             </Styled.Skill>
           );
         })}

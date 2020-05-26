@@ -11,11 +11,11 @@ const mainNavItems: MainNavItem[] = [
   {
     title: 'Home',
     slug: '/'
-  },
+  }
   // {
   //   title: 'Resume',
   //   slug: '/resume/'
-  // },
+  // }
   // {
   //   title: 'Blog',
   //   slug: '/blog/'

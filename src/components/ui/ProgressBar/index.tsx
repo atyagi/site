@@ -4,13 +4,13 @@ import * as Styled from './styles';
 
 interface Props extends Styled.StyledProps {
   title: string;
+  ability: string;
 }
 
-const ProgressBar: React.FC<Props> = ({ title, percentage }) => (
+const ProgressBar: React.FC<Props> = ({ title, percentage, ability }) => (
   <Styled.ProgressBar>
     <Styled.Content>
       <Styled.Title>{title}</Styled.Title>
-      <Styled.Percentage>{percentage}%</Styled.Percentage>
     </Styled.Content>
     <Styled.BarWrapper>
       <Styled.Bar percentage={percentage} />
