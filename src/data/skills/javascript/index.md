@@ -1,5 +1,5 @@
 ---
 category: 'skills'
 title: 'JavaScript'
-percentage: 95
+ability: 'Expert'
 ---

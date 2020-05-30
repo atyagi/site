@@ -1,5 +1,5 @@
 ---
 category: 'skills'
 title: 'ElasticSearch'
-percentage: 95
+ability: 'Advanced'
 ---

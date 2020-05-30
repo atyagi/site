@@ -14,7 +14,7 @@ interface Skill {
     id: string;
     frontmatter: {
       title: string;
-      percentage: number;
+      ability: string;
     };
   };
 }
@@ -28,13 +28,13 @@ const Skills: React.FC = () => {
           subtitle
         }
       }
-      allMarkdownRemark(filter: { frontmatter: { category: { eq: "skills" } } }, sort: { fields: fileAbsolutePath }) {
+      allMarkdownRemark(filter: { frontmatter: { category: { eq: "skills" } } }, sort: { fields: id }) {
         edges {
           node {
             id
             frontmatter {
               title
-              percentage
+              ability
             }
           }
         }
@@ -52,14 +52,12 @@ const Skills: React.FC = () => {
         {skills.map((item) => {
           const {
             id,
-            frontmatter: { title, percentage }
+            frontmatter: { title, ability }
           } = item.node;
-
-          let ability = percentage >= 66 ? 'Expert' : percentage < 33 ? 'Beginner' : 'Advanced';
 
           return (
             <Styled.Skill key={id}>
-              <ProgressBar title={title} percentage={percentage} ability={ability} />
+              <ProgressBar title={title} ability={ability} />
             </Styled.Skill>
           );
         })}

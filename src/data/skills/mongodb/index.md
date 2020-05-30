@@ -1,5 +1,5 @@
 ---
 category: 'skills'
 title: 'MongoDB'
-percentage: 95
+ability: 'Expert'
 ---

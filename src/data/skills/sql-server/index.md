@@ -1,5 +1,5 @@
 ---
 category: 'skills'
 title: 'SQL Server'
-percentage: 70
+ability: 'Intermediate'
 ---

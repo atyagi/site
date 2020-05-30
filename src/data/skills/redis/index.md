@@ -1,5 +1,5 @@
 ---
 category: 'skills'
 title: 'Redis'
-percentage: 95
+ability: 'Advanced'
 ---

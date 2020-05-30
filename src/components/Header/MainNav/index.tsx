@@ -15,7 +15,7 @@ const mainNavItems: MainNavItem[] = [
   // {
   //   title: 'Resume',
   //   slug: '/resume/'
-  // }
+  // },
   // {
   //   title: 'Blog',
   //   slug: '/blog/'

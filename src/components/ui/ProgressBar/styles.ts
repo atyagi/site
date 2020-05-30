@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import tw from 'tailwind.macro';
 
 export interface StyledProps {
-  percentage: number;
+  ability: string;
 }
 
 export const ProgressBar = styled.div`
@@ -15,7 +15,20 @@ export const BarWrapper = styled.div`
 
 export const Bar = styled.div<StyledProps>`
   ${tw`h-2 bg-teal-400`};
-  width: ${({ percentage }) => `${percentage}%`};
+  width: ${({ ability }) => {
+    switch (ability) {
+      case 'Beginner':
+        return '25%';
+      case 'Intermediate':
+        return '50%';
+      case 'Advanced':
+        return '75%';
+      case 'Expert':
+        return '100%';
+      default:
+        return '0%';
+    }
+  }};
 `;
 
 export const Content = styled.div`
@@ -26,6 +39,6 @@ export const Title = styled.h3`
   ${tw`font-semibold`};
 `;
 
-export const Percentage = styled.h3`
-  ${tw`font-semibold`};
+export const Ability = styled.h3`
+  ${tw`font-light text-sm`};
 `;
