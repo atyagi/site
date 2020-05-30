@@ -8,6 +8,9 @@ import PostComponent from 'components/ui/Post';
 import { SectionTitle, ImageSharpFluid } from 'helpers/definitions';
 
 import * as Styled from './styles';
+import Loadable from '@loadable/component';
+
+const Carousel = Loadable(() => import('components/ui/Carousel'));
 
 interface Post {
   node: {
@@ -29,17 +32,17 @@ interface Post {
   };
 }
 
-const Posts: React.FC = () => {
+const FeaturedPosts: React.FC = () => {
   const { markdownRemark, allMarkdownRemark } = useStaticQuery(graphql`
     query {
-      markdownRemark(frontmatter: { category: { eq: "blog section" } }) {
+      markdownRemark(frontmatter: { category: { eq: "featured section" } }) {
         frontmatter {
           title
           subtitle
         }
       }
       allMarkdownRemark(
-        filter: { frontmatter: { category: { eq: "blog" }, published: { eq: true } } }
+        filter: { frontmatter: { category: { eq: "blog" }, published: { eq: true }, featured: { eq: true } } }
         sort: { fields: frontmatter___date, order: DESC }
       ) {
         edges {
@@ -75,28 +78,32 @@ const Posts: React.FC = () => {
     <Container section>
       <TitleSection title={sectionTitle.title} subtitle={sectionTitle.subtitle} center />
       <Styled.Posts>
-        {posts.map((item) => {
-          const {
-            id,
-            fields: { slug },
-            frontmatter: { title, cover, description, date, tags }
-          } = item.node;
+        <Carousel>
+          {posts.map((item) => {
+            const {
+              id,
+              fields: { slug },
+              frontmatter: { title, cover, description, date, tags }
+            } = item.node;
 
-          return (
-            <PostComponent
-              id={id}
-              slug={slug}
-              date={date}
-              title={title}
-              description={description}
-              tags={tags}
-              cover={cover}
-            />
-          );
-        })}
+            return (
+              <Styled.PostContainer>
+                <PostComponent
+                  id={id}
+                  slug={slug}
+                  date={date}
+                  title={title}
+                  description={description}
+                  tags={tags}
+                  cover={cover}
+                />
+              </Styled.PostContainer>
+            );
+          })}
+        </Carousel>
       </Styled.Posts>
     </Container>
   );
 };
 
-export default Posts;
+export default FeaturedPosts;

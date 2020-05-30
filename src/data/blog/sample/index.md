@@ -6,6 +6,7 @@ description: 'This appears as an intro on the /blog page'
 date: '2019-12-24'
 tags: ['JavaScript', 'React']
 published: false
+featured: false
 ---
 
 Note that controls for whether to publish or not exist with the 'published' flag above.

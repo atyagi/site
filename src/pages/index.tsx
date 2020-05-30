@@ -10,7 +10,6 @@ const IndexPage: React.FC = () => {
       <SEO title="Home" />
       <HeroBanner />
       <hr />
-      {/*  TODO: put some featured posts here*/}
     </Layout>
   );
 };
