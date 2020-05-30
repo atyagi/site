@@ -5,7 +5,8 @@ module.exports = {
   siteMetadata: {
     title: `Ankit Tyagi`,
     description: `Personal Site and Blog for Ankit Tyagi.`,
-    author: `Ankit Tyagi`
+    author: `Ankit Tyagi`,
+    siteUrl: siteAddress.toString()
   },
   plugins: [
     `gatsby-plugin-typescript`,
@@ -90,6 +91,13 @@ module.exports = {
       options: {
         siteUrl: siteAddress.href.slice(0, -1)
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: ['/about']
+      }
+    },
+    `gatsby-plugin-robots-txt`
   ]
 };
