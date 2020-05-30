@@ -8,9 +8,10 @@ content: >-
   of what we can do forward.
   <br><br>
   Some of my latest interests have been in Machine Learning, Data Analysis,
-  Cloud Computing, and Infrastructure.
+  and Cloud Computing, especially applied in unique and interesting ways.
   <br><br>
   In my free time, I enjoy cooking and food, music, and sports.
-linkTo: '/'
-linkText: 'View My Profile'
+linkTo: ''
+linkText: ''
 ---
+Note: add linkTo and linkText to render button

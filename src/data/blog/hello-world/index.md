@@ -2,19 +2,26 @@
 category: 'blog'
 cover: './cover.jpg'
 title: 'Hello World!'
-description: Introduction to the site
-date: '2020-05-14'
-tags: ['introduction']
+description: A Brief Introduction
+date: '2020-05-30'
+tags: ['intro']
 published: true
+featured: true
 ---
+Hello! Having worked as a software engineer for nearly 10 years now, a question I receive all too commonly is 
+"do you know how to make websites?". Based on this site, looks like I do. All jokes aside, this has been on the 
+list of things to do for quite some time, and it feels good to get the framework in place to start putting in more 
+posts/articles.
 
-Hello! This is the start of a way to help give back to the broader tech community in a way that I used to learn
-over the years. 
+My plan is to write about the things that interest me in software and technology. Some things that are interesting
+to me right now are:
 
-I've been writing software for about 10 years at the time of writing this, which feels both like an eternity and
-like no time has passed.
+- Machine Learning/Data Science
+- Cloud Computing and AWS
+- IoT and Connected Homes
+- Event Driven Architectures
+- Clean and Practical Coding
 
-# Test Header
-
-- This is a test list
-- This is a second item
+These are certainly very broad topics, but the hope is to narrow in on interesting applications within these
+broader fields. To kick things off, the first post will be about the underlying technology that's powering
+this site. 

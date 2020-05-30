@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 import Container from 'components/ui/Container';
 import Button from 'components/ui/Button';
 import TitleSection from 'components/ui/TitleSection';
-import FormatHtml from "components/utils/FormatHtml";
+import FormatHtml from 'components/utils/FormatHtml';
 
 import * as Styled from './styles';
 
@@ -21,11 +21,13 @@ const Banner: React.FC<Props> = ({ title, subtitle, content, linkTo, linkText })
     <Container section>
       <TitleSection title={title} subtitle={subtitle} />
       <Styled.Content>
-        <FormatHtml content={content}/>
+        <FormatHtml content={content} />
       </Styled.Content>
-      <Link to={linkTo}>
-        <Button primary>{linkText}</Button>
-      </Link>
+      {linkTo && (
+        <Link to={linkTo}>
+          <Button primary>{linkText}</Button>
+        </Link>
+      )}
     </Container>
   </Styled.Banner>
 );

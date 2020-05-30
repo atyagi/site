@@ -5,7 +5,7 @@ import Container from 'components/ui/Container';
 import TitleSection from 'components/ui/TitleSection';
 
 import * as Styled from './styles';
-import { SectionTitle } from '../../../helpers/definitions';
+import { SectionTitle } from 'helpers/definitions';
 
 interface Certificate {
   node: {

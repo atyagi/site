@@ -7,7 +7,7 @@ import HeroBanner from 'components/HeroBanner';
 const IndexPage: React.FC = () => {
   return (
     <Layout>
-      <SEO title="About Me" />
+      <SEO title="Home" />
       <HeroBanner />
       <hr />
       {/*  TODO: put some featured posts here*/}

@@ -9,12 +9,13 @@ import Certificate from 'components/ui/Certificate';
 
 const ResumePage: React.FC = () => (
   <Layout>
-    <SEO title="Resume" />
+    <SEO title="About Me" />
     <Experience />
     <hr />
     <Education />
     <hr />
     <Skills />
+    <hr />
     <Certificate />
   </Layout>
 );
